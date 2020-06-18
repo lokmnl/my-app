@@ -1,0 +1,9 @@
+#mypage .page__background { 
+    background-image: url('../img/bg4.jpeg');
+}
+#n1{
+    color: red;
+}
+#n2{
+    color: rgb(138, 55, 55);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/onsenui.css" />
+    <link rel="stylesheet" href="css/onsen-css-components.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>My App</title>
+</head>
+
+<body>
+   <ons-page id='mypage' modifier="full_bg">     
+        <div class="">
+            <img src="../img/logo.png" alt="" style="max-width: 45px; float: left;">
+            <h5 style="float: center;">Lokmane</h5>
+        </div>
+        <br>
+       <div style="text-align: center;">
+           <p>Welcome To My App</p>
+           <ons-input input-id="n1" modifier="underbar" placeholder="num 1" float onkeypress='return event.charCode >= 48 && event.charCode <= 57' ></ons-input>
+           <br><br>
+           <ons-input input-id="n2" modifier="underbar" placeholder="num 2" float onkeypress='return event.charCode >= 48 && event.charCode <= 57' ></ons-input>
+           <p>
+           <ons-button onclick="add()">Add</ons-button>
+           <ons-button onclick="sub()">Sub</ons-button></p>
+           <ons-button onclick="clearinput()">clear</ons-button>
+       </div>
+   </ons-page>
+  
+
+
+
+
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/onsenui.min.js"></script>
+    <script src="app.js"></script>
+    </script>
+</body>
+
+</html>
